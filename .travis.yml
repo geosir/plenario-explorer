@@ -1,23 +1,23 @@
 ---
 language: node_js
 node_js:
-  - "0.12"
-
-sudo: false
+  - "node"
 
 cache:
   directories:
     - node_modules
 
 before_install:
-  - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
-  - "npm config set spin false"
-  - "npm install -g npm@^2"
+  - sudo apt-get install phantomjs -y
+  - npm config set spin false
+  - npm install -g npm@^2
 
 install:
   - npm install -g bower
+  - npm install -g ember
   - npm install
   - bower install
+  - ember build -prod
 
 script:
   - npm test
