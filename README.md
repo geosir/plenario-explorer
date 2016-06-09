@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/geosir/plenario-explorer.svg?branch=master)](https://travis-ci.org/geosir/plenario-explorer)
+
 # Plenario Explorer
 
 This is an [Ember](http://emberjs.com/) application that fetches data from the plenar.io API.
