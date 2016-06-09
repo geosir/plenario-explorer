@@ -25,5 +25,3 @@ deploy:
   bucket: urbanccd-george-test
   local-dir: dist
   acl: public_read
-  on:
-    repo: geosir/plenario-explorer
